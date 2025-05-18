@@ -1,0 +1,30 @@
+.register-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 120px);
+  padding: 2rem 0;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.required {
+  color: var(--error-color);
+}
+
+.form-hint {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.input-error {
+  border-color: var(--error-color) !important;
+}
+
+.error-message {
+  display: block;
+  color: var(--error-color);
+  font-size: 0.8rem;
+  margin-top: 4px;
+}

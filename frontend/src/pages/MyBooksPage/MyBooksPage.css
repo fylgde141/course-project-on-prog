@@ -1,0 +1,71 @@
+.my-books-page {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.add-book-form {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  animation: fadeIn 0.5s ease;
+}
+
+.add-book-form h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+textarea.form-input {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.my-books-content {
+  min-height: 200px;
+}
+
+.no-books-message {
+  text-align: center;
+  padding: 3rem;
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.no-books-message p {
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions .btn {
+    width: 100%;
+  }
+}

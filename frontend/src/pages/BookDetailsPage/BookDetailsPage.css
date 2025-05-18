@@ -1,0 +1,158 @@
+.book-details-page {
+  animation: fadeIn 0.5s ease-in-out;
+  padding-bottom: 2rem;
+}
+
+.book-details-container {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.book-image-container {
+  position: relative;
+  width: 300px;
+  flex-shrink: 0;
+  height: 400px;
+}
+
+.book-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-unavailable-badge.large {
+  font-size: 1rem;
+  padding: 6px 12px;
+}
+
+.book-info {
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-title {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.book-owner {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.book-owner span {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.book-description {
+  margin-bottom: 2rem;
+}
+
+.book-description h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-dark);
+}
+
+.request-btn {
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 12px 24px;
+  font-size: 1rem;
+}
+
+.book-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.book-reviews {
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.book-reviews h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.reviews-list {
+  margin-bottom: 2rem;
+}
+
+.review-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.review-item:last-child {
+  border-bottom: none;
+}
+
+.review-author {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.no-reviews {
+  font-style: italic;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.add-review-form h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--primary-dark);
+}
+
+.add-review-form textarea {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .book-details-container {
+    flex-direction: column;
+  }
+
+  .book-image-container {
+    width: 100%;
+    height: 300px;
+  }
+
+  .book-info {
+    padding: 1.5rem;
+  }
+
+  .book-title {
+    font-size: 1.5rem;
+  }
+
+  .book-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .book-actions .btn {
+    width: 100%;
+  }
+
+  .request-btn {
+    width: 100%;
+  }
+}

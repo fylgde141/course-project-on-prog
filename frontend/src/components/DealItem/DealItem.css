@@ -1,0 +1,126 @@
+.deal-item {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.deal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: var(--background-light);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.deal-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.deal-status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.deal-status[data-status="created"] {
+  background-color: var(--warning-color);
+  color: white;
+}
+
+.deal-status[data-status="agreed"] {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.deal-status[data-status="completed"] {
+  background-color: var(--primary-dark);
+  color: white;
+}
+
+.deal-status[data-status="rejected"] {
+  background-color: var(--error-color);
+  color: white;
+}
+
+.deal-toggle .arrow {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid var(--text-primary);
+  border-bottom: 2px solid var(--text-primary);
+  transition: transform 0.3s ease;
+}
+
+.deal-toggle .arrow.down {
+  transform: rotate(45deg);
+}
+
+.deal-toggle .arrow.up {
+  transform: rotate(-135deg);
+}
+
+.deal-details {
+  padding: 1rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.deal-info {
+  margin-bottom: 1rem;
+}
+
+.deal-info p {
+  margin-bottom: 0.5rem;
+}
+
+.contact-info {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgba(212, 185, 150, 0.1);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--secondary-color);
+}
+
+.contact-info h4 {
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.deal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.accept-deal-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.accept-deal-form select {
+  width: 100%;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .accept-deal-form {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .accept-deal-form select {
+    flex: 1;
+  }
+}
